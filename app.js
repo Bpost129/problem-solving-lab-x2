@@ -61,3 +61,9 @@ function letterReverse(str) {
 
 console.log(letterReverse("Luke I am your father"));
 console.log(letterReverse("Aren't you a little short for a storm trooper"));
+
+function calculateCube(num) {
+  return (num * num) * num
+}
+
+console.log(calculateCube(5));
