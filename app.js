@@ -120,3 +120,19 @@ console.log(
 		["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]
 	)
 );
+
+
+function transmogrify(num1, num2, num3) {
+  let trans = num1 * num2
+  let mog = trans
+
+  let i = 1
+  while (i < num3) {
+    mog *= trans
+    i++
+  }
+
+  return mog
+}
+
+console.log(transmogrify(5, 3, 2));
