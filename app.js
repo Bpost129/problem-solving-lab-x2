@@ -92,3 +92,31 @@ function getMultipleLengths(arr) {
 }
 
 console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
+
+
+function maxOfThree(num1, num2, num3) {
+  if (num1 > num2) {
+    if (num1 > num3) return num1
+    else return num3
+  } else {
+    if (num2 > num3) return num2
+    else return num3
+  } 
+}
+
+console.log(maxOfThree(6, 9, 1));
+
+
+function printLongestWord(arr) {
+  let longest = arr[0]
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i].length > longest.length) longest = arr[i]
+  }
+  return longest
+}
+
+console.log(
+	printLongestWord(
+		["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "blob"]
+	)
+);
