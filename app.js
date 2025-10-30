@@ -38,3 +38,13 @@ function calculate(num1, num2, operation) {
 
 console.log(calculate(4, 3, 'sub'))
 console.log(calculate(4, 3, 'exp'))
+
+
+function printConsecutives(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i + 1] === arr[i] + 1 && arr[i + 2] === arr[i + 1] + 1) console.log(arr[i], arr[i + 1], arr[i + 2])
+  }
+}
+
+printConsecutives([1, 2, 3, 9, 8, 0, 44, 45, 46, 2, 9]);
+printConsecutives([0, 0, 0, -3, -2, -1, 0, 1, 2, 3]);
