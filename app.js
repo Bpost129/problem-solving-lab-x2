@@ -136,3 +136,25 @@ function transmogrify(num1, num2, num3) {
 }
 
 console.log(transmogrify(5, 3, 2));
+
+
+function findNeedle(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === 'needle') return `Found the needle at position ${i}`
+  }
+}
+
+console.log(findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']))
+
+
+function sumThePositive(arr) {
+  let sum = 0
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] > 0) sum += arr[i]
+  }
+  return sum
+}
+
+console.log(sumThePositive([1, -4, 7, 12]))
+
+
