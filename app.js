@@ -48,3 +48,16 @@ function printConsecutives(arr) {
 
 printConsecutives([1, 2, 3, 9, 8, 0, 44, 45, 46, 2, 9]);
 printConsecutives([0, 0, 0, -3, -2, -1, 0, 1, 2, 3]);
+
+
+function letterReverse(str) {
+  let strArr = str.split(' ')
+  for (let i = 0; i < strArr.length; i++) {
+    strArr[i] = strArr[i].split('').reverse().join('')
+  }
+
+  return strArr.join(' ')
+}
+
+console.log(letterReverse("Luke I am your father"));
+console.log(letterReverse("Aren't you a little short for a storm trooper"));
