@@ -67,3 +67,28 @@ function calculateCube(num) {
 }
 
 console.log(calculateCube(5));
+
+
+function isAVowel(str) {
+  return ['a','e','i','o','u'].includes(str.toLowerCase())
+}
+
+console.log(isAVowel("e"));
+
+
+function getTwoLengths(str1, str2) {
+  return [str1.length, str2.length]
+}
+
+console.log(getTwoLengths("Hank", "Hippopopalous"));
+
+
+function getMultipleLengths(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].length
+  }
+
+  return arr
+}
+
+console.log(getMultipleLengths(["hello", "what", "is", "up", "dude"]));
